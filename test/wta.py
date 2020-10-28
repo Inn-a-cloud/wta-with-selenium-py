@@ -12,7 +12,7 @@ class wta(unittest.TestCase):
     
     @classmethod
     def setUpClass(inst): 
-        inst.driver = webdriver.Chrome('/Users/innakomarova/Documents/Selenium/chromedriver-3')  
+        inst.driver = webdriver.Chrome('/path/to/your/Selenium/chromedriver')  
         inst.main_page = inst.driver.current_window_handle
         inst.driver.maximize_window()
         inst.driver.get('https://wta-with-se34-webdriver.info/')
